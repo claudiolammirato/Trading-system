@@ -17,9 +17,14 @@ def load_data_daily():
     data["dayofweek"] = data.index.dayofweek
     data["day"] = data.index.day
     data["month"] = data.index.month
-    data["yesr"] = data.index.year
+    data["year"] = data.index.year
     data["dayofyear"] = data.index.dayofyear
     data["quarter"] = data.index.quarter
+    data["hhv20"] = data.high.rolling(20).max()
+    data["llv20"] = data.high.rolling(20).min()
+    data["hhv5"] = data.high.rolling(20).max()
+    data["llv5"] = data.high.rolling(20).min()
+   
     return data
     
 
