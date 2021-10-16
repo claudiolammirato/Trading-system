@@ -40,7 +40,7 @@ def main():
 
     print(enter_rules)
     print(enter_rules[enter_rules == True].count())
-    print(exit_rules[exit_rules == True].count())
+    #sprint(exit_rules[exit_rules == True].count())
     
 
 if __name__ == "__main__":
